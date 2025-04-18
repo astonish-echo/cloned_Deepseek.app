@@ -7,9 +7,9 @@ from utils import get_chat_response
 st.title("💬 克隆ChatGPT")
 
 with st.sidebar:
-    openai_api_key = os.getenv("DEEPSEEK_API_KEY")
-        #st.text_input("请输入OpenAI API Key：", type="password")
-    st.markdown("[获取OpenAI API key](https://platform.openai.com/account/api-keys)")
+    openai_api_key = 'sk-e08c4e624dd34bd68f8c268210fb00d4'
+        # st.text_input("请输入OpenAI API Key：", type="password")
+    # st.markdown("[获取OpenAI API key](https://platform.openai.com/account/api-keys)")
 
 if "memory" not in st.session_state:
     st.session_state["memory"] = ConversationBufferMemory(return_messages=True)
